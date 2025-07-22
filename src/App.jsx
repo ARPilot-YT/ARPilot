@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { FaYoutube, FaTwitch, FaTwitter, FaDiscord } from "react-icons/fa";
-import { BsFillVolumeUpFill, BsFillVolumeMuteFill, BsPlayFill, BsPauseFill } from "react-icons/bs";
 import "./stars.css";
 
 // Simple Button component (replaces the missing UI Button import)
@@ -28,7 +27,7 @@ const sections = {
 export default function PersonalWebsite() {
   const [activeSection, setActiveSection] = useState("home");
   const [darkMode, setDarkMode] = useState(true);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false); // music paused by default
   const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef(null);
 
@@ -36,7 +35,11 @@ export default function PersonalWebsite() {
     if (audioRef.current) {
       audioRef.current.volume = 0.25;
       audioRef.current.loop = true;
-      if (isPlaying) audioRef.current.play().catch(() => {});
+      if (isPlaying) {
+        audioRef.current.play().catch(() => {});
+      } else {
+        audioRef.current.pause();
+      }
     }
   }, [isPlaying]);
 
@@ -147,8 +150,17 @@ export default function PersonalWebsite() {
   };
 
   return (
-    <div className={`min-h-screen p-4 transition-colors duration-300 relative overflow-hidden ${darkMode ? "text-gray-100" : "text-gray-900"} ${isPlaying ? "stars-bg" : darkMode ? "bg-gray-900" : "bg-gray-100"}`}>
-      <audio ref={audioRef} src="https://cdn.pixabay.com/download/audio/2022/07/16/audio_d7b8e5e7a4.mp3?filename=night-horizon-113135.mp3" />
+    <div
+      className={`min-h-screen p-4 transition-colors duration-300 relative overflow-hidden ${
+        darkMode
+          ? "text-gray-100 bg-black"
+          : "text-gray-100 bg-gray-900"
+      } ${isPlaying ? "stars-bg" : ""}`}
+    >
+      <audio
+        ref={audioRef}
+        src="https://cdn.pixabay.com/download/audio/2022/07/16/audio_d7b8e5e7a4.mp3?filename=night-horizon-113135.mp3"
+      />
       <header className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
         <img
           src="https://example.com/logo.png"
@@ -159,12 +171,7 @@ export default function PersonalWebsite() {
           <Button onClick={() => setDarkMode(!darkMode)} variant="outline">
             {darkMode ? "Light Mode" : "Dark Mode"}
           </Button>
-          <Button onClick={() => setIsPlaying(!isPlaying)} variant="outline">
-            {isPlaying ? <BsPauseFill /> : <BsPlayFill />}
-          </Button>
-          <Button onClick={() => setIsMuted(!isMuted)} variant="outline">
-            {isMuted ? <BsFillVolumeMuteFill /> : <BsFillVolumeUpFill />}
-          </Button>
+          {/* Music controls temporarily disabled */}
         </div>
       </header>
       <nav className="flex flex-wrap gap-2 justify-center mb-6">
