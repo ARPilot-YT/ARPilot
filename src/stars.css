@@ -1,0 +1,13 @@
+.stars-bg {
+  background: #000 url('https://i.imgur.com/1NqnXnT.png') repeat top center;
+  animation: moveStars 60s linear infinite;
+}
+
+@keyframes moveStars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 5000px;
+  }
+}
