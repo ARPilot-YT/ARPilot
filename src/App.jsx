@@ -77,7 +77,7 @@ export default function PersonalWebsite() {
           >
             <h2 className="text-2xl font-bold mb-2">Information</h2>
             <p>
-              My content aims to deliver high-quality and immersive gameplay experiences. Whether it's flying complex operations in ARMA or conducting high-stakes raids in Ready or Not, I strive to create content that engages viewers across all devices—phones, tablets, and desktops.
+              Some Information about myself, I am a former student from a computer tech class who enjoys making websites and programming things. I have done this for 3-4 years. My content on youtube strives to be the highest quality that I can produce and someday it will gain popularity. I do try to respond to all of my fans in the comments and love support.
             </p>
           </motion.div>
         );
@@ -94,7 +94,7 @@ export default function PersonalWebsite() {
             <ul className="list-disc list-inside mb-4">
               <li>
                 <a
-                  href="https://www.youtube.com/@yourchannel"
+                  href="https://www.youtube.com/@Arpilotyt"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline"
@@ -114,7 +114,7 @@ export default function PersonalWebsite() {
               </li>
               <li>
                 <a
-                  href="https://twitch.tv/yourtwitch"
+                  href="https://twitch.tv/arpilotyt"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline"
@@ -124,10 +124,10 @@ export default function PersonalWebsite() {
               </li>
             </ul>
             <div className="flex gap-4 text-2xl">
-              <motion.a whileHover={{ scale: 1.2 }} href="https://www.youtube.com/@yourchannel" target="_blank" rel="noopener noreferrer"><FaYoutube /></motion.a>
-              <motion.a whileHover={{ scale: 1.2 }} href="https://twitch.tv/yourtwitch" target="_blank" rel="noopener noreferrer"><FaTwitch /></motion.a>
+              <motion.a whileHover={{ scale: 1.2 }} href="https://www.youtube.com/@Arpilotyt" target="_blank" rel="noopener noreferrer"><FaYoutube /></motion.a>
+              <motion.a whileHover={{ scale: 1.2 }} href="https://twitch.tv/arpilotyt" target="_blank" rel="noopener noreferrer"><FaTwitch /></motion.a>
               <motion.a whileHover={{ scale: 1.2 }} href="https://twitter.com/yourtwitter" target="_blank" rel="noopener noreferrer"><FaTwitter /></motion.a>
-              <motion.a whileHover={{ scale: 1.2 }} href="https://discord.gg/yourdiscord" target="_blank" rel="noopener noreferrer"><FaDiscord /></motion.a>
+              <motion.a whileHover={{ scale: 1.2 }} href="https://discord.gg/VmqBBwkHBN" target="_blank" rel="noopener noreferrer"><FaDiscord /></motion.a>
             </div>
           </motion.div>
         );
@@ -140,9 +140,9 @@ export default function PersonalWebsite() {
             exit={{ opacity: 0, y: -20 }}
             className="p-4"
           >
-            <h1 className="text-3xl font-bold mb-2">Welcome to My Website</h1>
+            <h1 className="text-3xl font-bold mb-2">Welcome to my Website</h1>
             <p className="text-lg">
-              Explore more about who I am, my tactical content, and where you can find me across all platforms.
+              On this website you can explore all of my information such as links, about me and some information about my content and what I do.
             </p>
           </motion.div>
         );
@@ -189,7 +189,7 @@ export default function PersonalWebsite() {
       <footer className="mt-10 text-center text-sm opacity-70">
         <p>© {new Date().getFullYear()} YourName. All rights reserved.</p>
         <p>All content and material on this website are protected under copyright law and may not be reproduced without permission.</p>
-        <p>Background music: "Night Horizon" by Kevin MacLeod via Pixabay — royalty-free and free to use.</p>
+        <p>Background music: Still being worked on.</p> {/* "Night Horizon" by Kevin MacLeod via Pixabay — royalty-free and free to use. */}
       </footer>
     </div>
   );
