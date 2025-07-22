@@ -59,7 +59,7 @@ export default function PersonalWebsite() {
           >
             <h2 className="text-2xl font-bold mb-2">About Me</h2>
             <p>
-              I'm a content creator focused on immersive military simulation and tactical gameplay. I specialize in creating ARMA pilot content on YouTube, showcasing advanced flying techniques, missions, and tutorials. I also produce gameplay videos for tactical shooters like Ready or Not and other realistic games.
+              I am a content creator who enjoys making content for others enjoyment my core content is mostly Arma Reforger based content and more games as time goes on!
             </p>
           </motion.div>
         );
@@ -106,7 +106,7 @@ export default function PersonalWebsite() {
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                  ARMA Pilot Channel
+                  Arma Pilots Channel
                 </a>
               </li>
               <li>
