@@ -22,6 +22,7 @@ const sections = {
   about: "About Me",
   info: "Information",
   links: "Links",
+  
 };
 
 export default function PersonalWebsite() {
@@ -163,7 +164,7 @@ export default function PersonalWebsite() {
       />
       <header className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
         <img
-          src="https://example.com/logo.png"
+          src="https://cdn.discordapp.com/attachments/1293670005535277067/1397029017911169034/A234A258-C0D4-4B67-BFF6-E5AD2120C47C.png?ex=6880e4e9&is=687f9369&hm=11804c3f8d15b0027e25d097c452085b96297562c2ec44544aca3592c728f0c0&"
           alt="Logo"
           className="h-12 w-auto"
         />
