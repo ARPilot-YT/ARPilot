@@ -187,7 +187,7 @@ export default function PersonalWebsite() {
       </nav>
       <motion.div layout>{renderSection()}</motion.div>
       <footer className="mt-10 text-center text-sm opacity-70">
-        <p>© {new Date().getFullYear()} YourName. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} ARPilotYT. All rights reserved.</p>
         <p>All content and material on this website are protected under copyright law and may not be reproduced without permission.</p>
         <p>Background music: Still being worked on.</p> {/* "Night Horizon" by Kevin MacLeod via Pixabay — royalty-free and free to use. */}
       </footer>
