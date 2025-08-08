@@ -63,7 +63,7 @@ export default function PersonalWebsite() {
           >
             <h2 className="text-2xl font-bold mb-2">About Me</h2>
             <p>
-              I am a content creator who enjoys making content for others enjoyment my core content is mostly Arma Reforger based content and more games as time goes on!
+              I am a Arma Pilot content creator, I make content related to flying in Arma and playing multiple other games. Some of the games I play; Arma, Call of Duty, Ready or Not and many more in the future.
             </p>
           </motion.div>
         );
@@ -78,7 +78,7 @@ export default function PersonalWebsite() {
           >
             <h2 className="text-2xl font-bold mb-2">Information</h2>
             <p>
-              Some Information about myself, I am a former student from a computer tech class who enjoys making websites and programming things. I have done this for 3-4 years. My content on youtube strives to be the highest quality that I can produce and someday it will gain popularity. I do try to respond to all of my fans in the comments and love support.
+              I am a Full-Stack software engineer and I love bikes. I currently work on game engines and one of the bikes I own is a BMW S1000. I ride mostly for fun to get my mind off things and just hang out with other people on my journey out there. 
             </p>
           </motion.div>
         );
@@ -143,7 +143,7 @@ export default function PersonalWebsite() {
           >
             <h1 className="text-3xl font-bold mb-2">Welcome to my Website</h1>
             <p className="text-lg">
-              On this website you can explore all of my information such as links, about me and some information about my content and what I do.
+              This is a website for myself that I made myself because I got bored and decided to put my skills to work that I learned. If there are any bugs or issues with this website please notify me on my youtube or Discord!
             </p>
           </motion.div>
         );
